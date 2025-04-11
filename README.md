@@ -1,16 +1,53 @@
-## Hi there 👋
+# 👋 Hi, I'm Mohammad Abdullah
 
-<!--
-**Abdulla1x/Abdulla1x** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm a passionate **Computer Science undergraduate** student at Canadian University Dubai with a strong interest in software development, data science, and building impactful tech solutions. I'm passionate about building scalable tools, analyzing data for insights, and continuously improving my technical skill set. I enjoy designing clean, efficient systems and have a growing portfolio of projects in Python, Java, and SQL.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 💻 Tech Stack
+
+- **Languages:** Java, Python, SQL, C++
+- **Frameworks & Libraries:**  
+  - **Frontend & GUI:** PySide, Streamlit, Tkinter, PyQt5  
+  - **Data & Analysis:** pandas, Matplotlib, SQLite  
+  - **Web Scraping & Automation:** BeautifulSoup, requests, regex, `browser_use`  
+  - **AI & LLMs:** LangChain, `langchain_google_genai`, OpenAI API  
+  - **Environment & Tools:** `dotenv`, `pydantic`, asyncio, PIL  
+- **Developer Tools:** Git, VS Code, PyCharm, Visual Studio
+
+---
+
+## 📂 Featured Projects
+
+### 🥗 [Macros Calculator](https://github.com/Abdulla1x/Macros-Calculator) — *Python*
+A desktop app that calculates and tracks daily nutritional intake.
+- Supports multiple item entries, with total and average nutrient analysis over time.
+- Stores data in JSON, enables tracking over time.
+
+---
+
+### 🏙️ [Chicago City Data Analysis](https://github.com/Abdulla1x/Chicago-City-Data-Analysis) — *SQL*
+Analyzed public Chicago datasets for correlations between hardship, school performance, and crime.
+- Wrote custom views and stored procedures with error handling.
+
+---
+
+### 📦 [Inventory Management System](https://github.com/Abdulla1x/Inventory-Management-System) — *Java*
+A complete desktop inventory solution:
+- Product tracking, sales reporting, and inventory alerts.
+- Features efficient file-based data persistence and error-handling.
+
+---
+
+## 📜 Certifications
+
+- **Databases and SQL for Data Science with Python** – IBM, Coursera (Jul 2024)  
+- **What is Data Science?** – IBM, Coursera (Dec 2023)
+
+---
+
+## 📈 Let's Connect!
+
+- 🔗 [LinkedIn](https://www.linkedin.com/in/abdulla1x/)
+- 🧑‍💻 [GitHub](https://github.com/Abdulla1x)
+- 📧 m.abdulla992003@gmail.com
