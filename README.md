@@ -10,9 +10,7 @@ I'm a passionate **Computer Science undergraduate** student at Canadian Universi
 - **Frameworks & Libraries:**  
   - **Frontend & GUI:** PySide, Streamlit, Tkinter, PyQt5  
   - **Data & Analysis:** pandas, Matplotlib, SQLite  
-  - **Web Scraping & Automation:** BeautifulSoup, requests, regex, `browser_use`  
-  - **AI & LLMs:** LangChain, `langchain_google_genai`, OpenAI API  
-  - **Environment & Tools:** `dotenv`, `pydantic`, asyncio, PIL  
+  - **AI & LLMs:** langchain_google_genai   
 - **Developer Tools:** Git, VS Code, PyCharm, Visual Studio
 
 ---
