@@ -24,13 +24,13 @@ A desktop app that calculates and tracks daily nutritional intake.
 
 ---
 
-### 🏙️ [Chicago City Data Analysis](https://github.com/Abdulla1x/Chicago-City-Data-Analysis) — *SQL*
+### 🏙️ [Chicago City Data Analysis](https://github.com/Abdulla1x/sql-assessments) — *SQL*
 Analyzed public Chicago datasets for correlations between hardship, school performance, and crime.
 - Wrote custom views and stored procedures with error handling.
 
 ---
 
-### 📦 [Inventory Management System](https://github.com/Abdulla1x/Inventory-Management-System) — *Java*
+### 📦 [Inventory Management System] — *Java*
 A complete desktop inventory solution:
 - Product tracking, sales reporting, and inventory alerts.
 - Features efficient file-based data persistence and error-handling.
