@@ -30,7 +30,7 @@ Analyzed public Chicago datasets for correlations between hardship, school perfo
 
 ---
 
-### 📦 [Inventory Management System] — *Java*
+### 📦 Inventory Management System — *Java*
 A complete desktop inventory solution:
 - Product tracking, sales reporting, and inventory alerts.
 - Features efficient file-based data persistence and error-handling.
