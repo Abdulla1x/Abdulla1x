@@ -1,195 +1,76 @@
-# 👋 Hi, I'm Mohammad Abdullah
+# Hi, I'm Mohammad Abdullah 👋
 
-I’m a **Computer Science undergraduate at Canadian University Dubai (GPA: 3.97)** with strong interests in **software engineering, data engineering, and AI-powered applications**.
+Computer Science undergraduate at **Canadian University Dubai** (GPA: 3.97) with hands-on experience in **machine learning, computer vision, data engineering, and LLM-powered applications**.
 
-I enjoy building **end-to-end systems** — from data pipelines and analytics platforms to deployable web applications — using **Python, Java, SQL, and modern data tooling**.
+I build end-to-end systems — from object detection models and ETL pipelines to deployable web apps — and I'm comfortable across the full ML workflow: dataset construction, transfer learning, controlled experimentation, and quantitative evaluation.
 
-My work focuses on:
-
-- **Data pipelines and large dataset analysis**
-- **LLM-powered applications**
-- **Automation and web scraping tools**
-- **Deployable data-driven web apps**
+📫 [LinkedIn](https://www.linkedin.com/in/abdulla1x/) • [Email](mailto:m.abdulla992003@gmail.com)
 
 ---
 
-# 💻 Technical Stack
+## 🛠 Technical Stack
 
-### Languages
-Python • Java • SQL • C++ • Prolog • Lisp
+**Languages:** Python • Java • SQL • C++ • Prolog • Lisp
 
-### Data & Machine Learning
-pandas • NumPy • scikit-learn • Matplotlib • Seaborn
+**ML & Computer Vision:** YOLOv8 • PyTorch • scikit-learn • pandas • NumPy • Transfer Learning • Object Detection
 
-### Web & App Frameworks
-Streamlit • Tkinter • PyQt5 • PySide
+**AI & Automation:** Gemini LLM • Ollama (DeepSeek-R1) • Browser Automation
 
-### AI & Automation
-Gemini LLM • Ollama (DeepSeek-R1) • LangChain • Browser Automation
+**Frameworks & Tools:** Streamlit • Git • Google Colab • Roboflow
 
-### Databases
-SQLite • Relational Databases • Data Normalization
-
-### Tools
-Git • GitHub • VS Code • PyCharm • Google Colab
+**Databases:** SQLite • Relational Databases
 
 ---
 
-# 🚀 Featured Projects
+## 🚀 Featured Projects
 
-## 🥗 Macros Calculator (Nutrition Tracking Web App)
+### 🎯 [AI Campus Safety Detection System](https://github.com/Abdulla1x/BCS407_Project)
+`Python` `YOLOv8` `Roboflow` `PyTorch` `Google Colab`
 
-🔗 **Live App**  
-https://macros-calculator.streamlit.app/
-
-📂 **Repository**  
-https://github.com/Abdulla1x/Macros-Calculator
-
-A **full-stack nutrition tracking web application** built with Streamlit that allows users to calculate and track calories and macronutrients for individual foods and multi-ingredient meals.
-
-### Key Features
-
-- Single food **macro calculator**
-- **Multi-item meal builder** with automatic macro aggregation
-- Persistent meal storage using **SQLite**
-- **CRUD operations** for managing meal records
-- Interactive **analytics dashboard** showing calorie trends
-- Date-range filtering for nutrition analysis
-- Deployed publicly using **Streamlit Cloud**
-
-### Tech Stack
-
-Python • Streamlit • SQLite • Pandas • Altair
+Trained a YOLOv8s object detection model on a custom 2,211-image campus dataset to detect fire alarms, wet floor signs, emergency exits, and safety helmets in real time.
+- Achieved **96.8% mAP@0.50** after diagnosing class imbalance and consolidating exit sub-classes (+15.8 pp improvement)
+- Ran 3 controlled improvement experiments; hyperparameter tuning was the best strategy (**94.52% mAP** on test set)
+- End-to-end pipeline: Roboflow annotation → COCO transfer learning → 10.4ms/frame inference
 
 ---
 
-## 🚕 NYC Yellow Taxi Data Mining Pipeline
+### 🥗 [Macros Calculator](https://github.com/Abdulla1x/Macros-Calculator) — [Live Demo](https://macros-calculator.streamlit.app/)
+`Python` `Streamlit` `SQLite` `Pandas` `Altair`
 
-A large-scale **data mining and machine learning pipeline** developed to analyze NYC Yellow Taxi trip data and extract behavioral insights from transportation datasets.
-
-### Pipeline Stages
-
-**1️⃣ Data Ingestion**
-- Imported large raw taxi trip datasets
-- Performed initial **data profiling and validation**
-
-**2️⃣ Data Cleaning & Preprocessing**
-- Handled missing values and noisy records
-- Implemented:
-  - Outlier detection
-  - Data discretization
-  - Binarization
-  - Categorical encoding
-
-**3️⃣ Feature Engineering**
-- Created **temporal and behavioral features**
-- Generated analytics-ready datasets for modeling
-
-**4️⃣ Machine Learning**
-- Implemented classification models using **scikit-learn**
-- Achieved **97% prediction accuracy**
-
-### Technologies
-
-Python • Pandas • scikit-learn • Data Visualization
+Full-stack nutrition tracking web app with meal management, CRUD operations, and an analytics dashboard for calorie trends. Deployed on Streamlit Cloud.
 
 ---
 
-## 🤖 CUD Course Scraper (AI-Powered Web Automation)
+### 🚕 NYC Yellow Taxi Data Mining Pipeline
+`Python` `Pandas` `scikit-learn`
 
-A **browser automation and AI-assisted scraping tool** that extracts course offerings from the Canadian University Dubai student portal.
-
-### Features
-
-- Automated login and page navigation using **browser automation**
-- Extracts course data across multiple portal pages
-- Displays structured results through a **Streamlit interface**
-- Integrated **Gemini and Ollama DeepSeek-R1 LLMs** to:
-  - automate browser actions
-  - enable natural language queries about course data
-- Modular architecture separating:
-  - automation logic
-  - data formatting
-  - UI components
-
-### Technologies
-
-Python • Streamlit • Gemini LLM • Ollama DeepSeek-R1 • Browser Automation
+End-to-end ETL pipeline covering ingestion, profiling, cleaning, feature engineering, and classification modeling on large-scale taxi trip data — achieving **97% prediction accuracy**.
 
 ---
 
-## 🏙️ Chicago City Data Analysis
+### 🤖 [CUD Course Scraper](https://github.com/Abdulla1x/CourseScraping-BU)
+`Python` `Streamlit` `Gemini LLM` `Ollama DeepSeek-R1` `Browser Automation`
 
-📂 Repository  
-https://github.com/Abdulla1x/sql-assessments
-
-A SQL-based data analysis project exploring relationships between **community hardship, crime rates, and school performance** using datasets from the Chicago Data Portal.
-
-### Key Work
-
-- Wrote complex SQL queries across multiple datasets
-- Created **database views** to standardize school performance metrics
-- Developed **stored procedures with error handling**
-- Implemented transaction management to update leadership scores safely
-
-### Technologies
-
-SQL • Relational Databases
+AI-powered browser automation tool that logs into the CUD student portal, scrapes course offerings, and enables natural language queries via integrated LLMs.
 
 ---
 
-## 🤖 AI Medication Reminder
+### 🏙️ [Chicago City Data Analysis](https://github.com/Abdulla1x/sql-assessments)
+`SQL`
 
-An AI-powered system that manages medication schedules using natural language input.
-
-### Features
-
-- Extracts medication details using **Gemini LLM**
-- Automates reminders with **APScheduler**
-- Uses **Prolog logic rules** to detect unsafe drug combinations
-- Supports natural language input for medication scheduling
-
-### Technologies
-
-Python • Streamlit • Gemini LLM • APScheduler • SWI-Prolog
+Multi-dataset SQL analysis exploring correlations between community hardship, crime rates, and school performance — including views, stored procedures, and transaction management.
 
 ---
 
-## 📦 Inventory Management System
+### 💊 [AI Medication Reminder](https://github.com/Abdulla1x/AI-Medication-Remainder)
+`Python` `Streamlit` `Gemini LLM` `APScheduler` `SWI-Prolog`
 
-A **Java-based desktop inventory system** developed in a team of five.
-
-### Features
-
-- Product inventory tracking
-- Stock level monitoring
-- Sales reporting
-- File-based persistent storage
-- Exception handling and robust OOP design
-
-### Technologies
-
-Java • Object-Oriented Programming • File I/O
+Natural language medication scheduling app using Gemini LLM for input parsing, APScheduler for automated reminders, and Prolog logic rules for drug interaction safety checks.
 
 ---
 
-# 📜 Certifications
-
-📚 **Databases and SQL for Data Science with Python**  
-IBM – Coursera (Jul 2024)
-
-📚 **What is Data Science?**  
-IBM – Coursera (Dec 2023)
-
----
-
-# 📬 Connect With Me
-
-🔗 LinkedIn  
-https://www.linkedin.com/in/abdulla1x/
-
-🧑‍💻 GitHub  
-https://github.com/Abdulla1x
-
-📧 Email  
-m.abdulla992003@gmail.com
+## 📜 Certifications
+- **Introduction to Modern AI** — Cisco Networking Academy (Apr 2026)
+- **Databases and SQL for Data Science with Python** — IBM, Coursera (Jul 2024)
+- **C Essentials 1** — Cisco Networking Academy (Apr 2026)
+- **What is Data Science?** — IBM, Coursera (Dec 2023)
