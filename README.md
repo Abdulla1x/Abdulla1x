@@ -69,6 +69,24 @@ Natural language medication scheduling app using Gemini LLM for input parsing, A
 
 ---
 
+## 🎓 Algorithm Visualizations
+
+Interactive browser-based tools built for BCS 309 – Algorithms I. No dependencies — pure HTML, CSS, and vanilla JavaScript, deployed on GitHub Pages.
+
+### 📦 [Subset Sum — Interactive Teaching Tool](https://github.com/Abdulla1x/subset-sum) — [Live Demo](https://abdulla1x.github.io/subset-sum/)
+`HTML` `CSS` `Vanilla JavaScript`
+
+Six-section interactive lecture covering brute force O(n·2ⁿ), dynamic programming O(n·t), pseudo-polynomial complexity, and a formal NP-completeness proof via 3-SAT reduction. Three visualization modes: DP table animation, brute force bitmask walkthrough, and side-by-side comparison with live operation counters.
+
+---
+
+### 🌳 [Huffman Coding — Interactive Visualization](https://github.com/Abdulla1x/huffman-visualization) — [Live Demo](https://abdulla1x.github.io/huffman-visualization/)
+`HTML` `CSS` `Vanilla JavaScript`
+
+Step-by-step visualization of the Huffman coding algorithm — min-heap construction, greedy merges, tree building, and code generation. Includes encode/decode, complexity comparison charts (Huffman vs Shannon-Fano vs Arithmetic), and an exchange-argument proof of greedy optimality.
+
+---
+
 ## 📜 Certifications
 - **Introduction to Modern AI** — Cisco Networking Academy (Apr 2026)
 - **Databases and SQL for Data Science with Python** — IBM, Coursera (Jul 2024)
