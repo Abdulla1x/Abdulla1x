@@ -40,22 +40,17 @@ Batch data pipeline ingesting air-quality data from the OpenAQ v3 API, comparing
 ---
 
 ### 🥗 [Macros Calculator](https://github.com/Abdulla1x/Macros-Calculator) — [Live App](https://macros-calculator-mu.vercel.app)
-`React 19` `TypeScript` `FastAPI` `PostgreSQL` `SQLAlchemy` `Gemini`
+`React 19` `TypeScript` `FastAPI` `PostgreSQL` `SQLAlchemy` `Gemini` `PWA`
 
-Multi-user nutrition tracking app, rebuilt from a single-user Streamlit prototype into a decoupled frontend/backend architecture — the original still lives in `legacy/`.
-- **React 19 + TypeScript** SPA, installable as a PWA, over a **FastAPI + SQLAlchemy** REST API on **PostgreSQL** — 50 endpoints, every one scoped to the authenticated user
-- Argon2id password hashing, JWT bearer tokens and per-IP rate limiting; cross-tenant isolation proved twice over, by 49 in-process tests and a 127-check smoke script fired at a *running* server
-- **AI meal analysis** from a photo, a voice note or a typed description — estimates come back as calorie and macro *ranges* with per-ingredient confidence, and the accuracy report refuses to answer where the sample is too small to answer honestly
-- **725 tests** behind a five-gate CI pipeline; 21 shipped phases; deployed on Vercel + Render + Neon
+A deployed **multi-user** nutrition tracking app, rebuilt from a single-user Streamlit prototype into a decoupled frontend/backend architecture. **21 shipped phases · 725 tests · 50 API endpoints.**
+- **Multimodal AI meal analysis** (Gemini) — describe a meal, record a voice note, or photograph it; any one produces a structured estimate and combining them sharpens it. Results are calorie and macro **ranges** with per-ingredient confidence, never a false-precision single number
+- **The model's accuracy is measured, not assumed.** Every estimate is logged and compared against what the user actually saved — interval coverage and directional bias per macro, with sample sizes — and it **refuses to report** where the evidence is too thin
+- **It uses your saved foods instead of guessing them:** the AI estimates the portion, your library supplies the macros — splitting the work along the line each side is actually good at
+- Depth beyond logging: a **daily burn measured from energy balance** rather than a formula, **calorie banking** across days, an eight-check **weekly review** where every figure carries its own window and sample size, water/step/supplement trackers, and meal sharing by self-contained code
+- Argon2id + JWT auth with per-IP rate limiting; **cross-tenant isolation proved twice** — 49 in-process tests and a 127-check smoke script fired at a *running* server
+- Installable **PWA**, five-gate CI, Alembic migrations on every deploy, on Vercel + Render + Neon
 
----
-
-### 🎮 [Game Dashboard](https://github.com/Abdulla1x/game-dashboard)
-`Python` `Standard Library` `HTTP` `Windows`
-
-One place to see and launch every game on a Windows PC — Steam, Epic, Xbox, Riot, and the loose folders that belong to no launcher at all — with real cover art for all of them.
-- **Pure Python 3 standard library**: no pip install, no npm, no build step, and nothing in the cloud
-- Runs a small HTTP server on `127.0.0.1` and opens a browser window at it; launcher detection, executable heuristics and icon extraction are all hand-rolled
+*Full feature list, architecture and screenshots in the [project README](https://github.com/Abdulla1x/Macros-Calculator#readme).*
 
 ---
 
@@ -66,6 +61,15 @@ Trained a YOLOv8s object detection model on a custom 2,069-image campus dataset 
 - Achieved **96.8% mAP@0.50** after diagnosing class imbalance and consolidating exit sub-classes (+15.8 pp improvement)
 - Ran 3 controlled improvement experiments; hyperparameter tuning was the best strategy (**94.52% mAP** on test set)
 - End-to-end pipeline: Roboflow annotation → COCO transfer learning → 10.4ms/frame inference
+
+---
+
+### 🎮 [Game Dashboard](https://github.com/Abdulla1x/game-dashboard)
+`Python` `Standard Library` `HTTP` `Windows`
+
+One place to see and launch every game on a Windows PC — Steam, Epic, Xbox, Riot, and the loose folders that belong to no launcher at all — with real cover art for all of them.
+- **Pure Python 3 standard library**: no pip install, no npm, no build step, and nothing in the cloud
+- Runs a small HTTP server on `127.0.0.1` and opens a browser window at it; launcher detection, executable heuristics and icon extraction are all hand-rolled
 
 ---
 
@@ -97,6 +101,17 @@ Natural language medication scheduling app using Gemini LLM for input parsing, A
 
 ---
 
+### 🧱 LiteMP — Minecraft Server & Control Panel
+`Python` `Linux` `systemd` `nginx` `Tailscale`
+
+A PaperMC Minecraft server and a custom web control panel running on a headless Ubuntu mini PC at home, for a handful of friends.
+- PaperMC under **systemd**, with a Python control panel served over HTTPS behind **nginx** — start/stop, live console, player management, plugin installs and metrics from a browser
+- **Tailscale** for remote administration, a tunnel for friends to connect through, and scripted backups with off-box copies
+
+*No public repository — the repo is a private server backup rather than a portfolio project.*
+
+---
+
 ## 🔨 Currently Building
 
 ### hybrid-rag-agent
@@ -107,12 +122,6 @@ A research assistant over a local corpus of AI/ML papers. An agent decides, per 
 Deliberately **no RAG frameworks** — no LangChain, no LlamaIndex. The chunker, the embedding and indexing step, retrieval, the ReAct loop and tool dispatch are all written directly; libraries are used only for primitives. Every model call goes through one entry point, so swapping Llama 3.3 70B on Groq for a local Ollama server is a one-file change.
 
 **Status:** the PDF ingestion and text-cleaning layer is built. Chunking, the FAISS index, retrieval, the agent loop, the evaluation harness and the API are still to come.
-
-### LiteMP — Minecraft server & control panel
-
-A PaperMC server and a custom web control panel running on a headless Ubuntu mini PC at home, for a handful of friends. PaperMC under **systemd**, a Python control panel served over HTTPS behind **nginx**, **Tailscale** for remote administration, and scripted backups with off-box copies.
-
-*No public repo — the repository is a private server backup rather than a portfolio project.*
 
 ---
 
