@@ -1,8 +1,8 @@
 # Hi, I'm Mohammad Abdullah 👋
 
-Computer Science undergraduate at **Canadian University Dubai** (GPA: 3.97) with hands-on experience in **data engineering, full-stack development, machine learning, computer vision, and LLM-powered applications**.
+Fourth-year Computer Science student at **Canadian University Dubai** (GPA 3.97, graduating Dec 2027). I build **applied AI and LLM features, cloud data pipelines and machine-learning models**, and I don't stop at "it runs": I measure whether the numbers are right.
 
-I build end-to-end systems — from orchestrated cloud data pipelines and deployed multi-user web services to object detection models — and I'm comfortable across the whole workflow: infrastructure as code, ELT modelling, API design, controlled experimentation, and quantitative evaluation.
+In practice that means scoring an AI model's estimates against what users actually saved, reconciling every backfilled chunk of a pipeline against its source, and publishing the coverage gap next to the finding it qualifies.
 
 📫 [LinkedIn](https://www.linkedin.com/in/abdulla1x/) • [Email](mailto:m.abdulla992003@gmail.com)
 
@@ -16,13 +16,13 @@ I build end-to-end systems — from orchestrated cloud data pipelines and deploy
 
 **ML & Computer Vision:** YOLOv8 • PyTorch • scikit-learn • pandas • NumPy • Transfer Learning • Object Detection
 
-**AI & Automation:** Gemini • Groq (Llama 3.3) • Ollama (DeepSeek-R1) • FAISS • Browser Automation
+**AI & Automation:** Gemini • Ollama (DeepSeek-R1) • browser-use
 
 **Frameworks & Tools:** FastAPI • React • Tailwind CSS • Streamlit • Git • GitHub Actions • pytest • Playwright • Roboflow • Google Colab
 
 **Databases:** PostgreSQL • SQLAlchemy • BigQuery • SQLite
 
-**Cloud & Deployment:** Google Cloud Platform • Vercel • Render • Neon
+**Cloud & Deployment:** Google Cloud Platform • Vercel • Render • Neon • Resend
 
 ---
 
@@ -39,18 +39,19 @@ Batch data pipeline ingesting air-quality data from the OpenAQ v3 API, comparing
 
 ---
 
-### 🥗 [Macros Calculator](https://github.com/Abdulla1x/Macros-Calculator) — [Live App](https://macros-calculator-mu.vercel.app)
+### 🥗 [Trackaholic](https://github.com/Abdulla1x/Trackaholic) — [Live App](https://trackaholic.app)
 `React 19` `TypeScript` `FastAPI` `PostgreSQL` `SQLAlchemy` `Gemini` `PWA`
 
-A deployed **multi-user** nutrition tracking app, rebuilt from a single-user Streamlit prototype into a decoupled frontend/backend architecture. **21 shipped phases · 725 tests · 50 API endpoints.**
-- **Multimodal AI meal analysis** (Gemini) — describe a meal, record a voice note, or photograph it; any one produces a structured estimate and combining them sharpens it. Results are calorie and macro **ranges** with per-ingredient confidence, never a false-precision single number
+A deployed **multi-user** calorie and macro tracker, formerly *Macros Calculator*. It started in 2024 as a single-user Streamlit prototype and was rebuilt as a React SPA over a FastAPI REST API. **200+ merged PRs · 1,600+ tests · 55 API paths · six-gate CI.**
+- **Multimodal AI meal analysis** (Gemini) — describe a meal, record a voice note, or photograph it. A voice note becomes editable text *before* anything is estimated, so a misheard ingredient is a typo to fix, not a wrong number to catch. Results are calorie and macro **ranges** with per-ingredient confidence, never a false-precision single number
+- **Your foods, the AI's eyes:** attach saved foods and their macros are sent as facts — **the AI estimates the portion, your library supplies the macros.** A photo with no note is asked about hidden oil and sauces first, because on 14 weighed meals every model tested read a photo alone low, by a median of 53–64% of the true calories
 - **The model's accuracy is measured, not assumed.** Every estimate is logged and compared against what the user actually saved — interval coverage and directional bias per macro, with sample sizes — and it **refuses to report** where the evidence is too thin
-- **It uses your saved foods instead of guessing them:** the AI estimates the portion, your library supplies the macros — splitting the work along the line each side is actually good at
-- Depth beyond logging: a **daily burn measured from energy balance** rather than a formula, **calorie banking** across days, an eight-check **weekly review** where every figure carries its own window and sample size, water/step/supplement trackers, and meal sharing by self-contained code
-- Argon2id + JWT auth with per-IP rate limiting; **cross-tenant isolation proved twice** — 49 in-process tests and a 127-check smoke script fired at a *running* server
-- Installable **PWA**, five-gate CI, Alembic migrations on every deploy, on Vercel + Render + Neon
+- **Food search over 26,000 foods from five national tables** (USDA, UK, France, Australia, Canada) plus Open Food Facts, ranked by its own in-memory search: the plain food is in the top 3 for **92%** of a 25-food benchmark, and CI fails if a change drops that below 90%
+- **Targets from sources, not round numbers:** a one-question-per-screen setup whose every limit cites a primary source (FAO/WHO/UNU activity data, sourced loss and gain caps), a **daily burn measured from energy balance** once there is enough data, calorie banking between days, and an eight-check **weekly review** where every figure carries its own window and sample size
+- Argon2id + JWT auth, per-IP rate limiting, and password reset by email; **cross-tenant isolation proved twice** — 51 in-process tests and a smoke script of 100+ live checks fired at a *running* server
+- Redesigned installable **PWA** — light and dark, nine palettes and a nutrition-label style — with **zero WCAG 2.2 A/AA violations** in an axe-core audit of all 37 routes at two widths; on Vercel + Render + Neon with Alembic migrations on every deploy
 
-*Full feature list, architecture and screenshots in the [project README](https://github.com/Abdulla1x/Macros-Calculator#readme).*
+*Engineering write-ups: [a three-day AI outage, traced to the server's region](https://github.com/Abdulla1x/Trackaholic/blob/main/docs/incident-2026-07-gemini-eea-region.md) · [picking a photo size with an A/B instead of a hunch](https://github.com/Abdulla1x/Trackaholic/blob/main/docs/photo-size-ab-2026-10.md) · [setting a calorie target from sources](https://github.com/Abdulla1x/Trackaholic/blob/main/docs/goal-setting-rules.md). Full feature list, architecture and screenshots in the [project README](https://github.com/Abdulla1x/Trackaholic#readme).*
 
 ---
 
@@ -73,34 +74,6 @@ One place to see and launch every game on a Windows PC — Steam, Epic, Xbox, Ri
 
 ---
 
-### 🚕 NYC Yellow Taxi Data Mining Pipeline
-`Python` `Pandas` `scikit-learn`
-
-End-to-end ETL pipeline covering ingestion, profiling, cleaning, feature engineering, and classification modeling on large-scale taxi trip data — achieving **97% prediction accuracy**.
-
----
-
-### 🤖 [CUD Course Scraper](https://github.com/Abdulla1x/CourseScraping-BU)
-`Python` `Streamlit` `Gemini LLM` `Ollama DeepSeek-R1` `Browser Automation`
-
-AI-powered browser automation tool that logs into the CUD student portal, scrapes course offerings, and enables natural language queries via integrated LLMs.
-
----
-
-### 🏙️ [Chicago City Data Analysis](https://github.com/Abdulla1x/sql-assessments)
-`SQL`
-
-Multi-dataset SQL analysis exploring correlations between community hardship, crime rates, and school performance — including views, stored procedures, and transaction management.
-
----
-
-### 💊 [AI Medication Reminder](https://github.com/Abdulla1x/AI-Medication-Remainder)
-`Python` `Streamlit` `Gemini LLM` `APScheduler` `SWI-Prolog`
-
-Natural language medication scheduling app using Gemini LLM for input parsing, APScheduler for automated reminders, and Prolog logic rules for drug interaction safety checks.
-
----
-
 ### 🧱 LiteMP — Minecraft Server & Control Panel
 `Python` `Linux` `systemd` `nginx` `Tailscale`
 
@@ -112,16 +85,12 @@ A PaperMC Minecraft server and a custom web control panel running on a headless 
 
 ---
 
-## 🔨 Currently Building
+## 🧩 Smaller Projects
 
-### hybrid-rag-agent
-`Python` `FAISS` `sentence-transformers` `Groq` `FastAPI`
-
-A research assistant over a local corpus of AI/ML papers. An agent decides, per query, whether to answer from the papers (dense retrieval over a FAISS index) or from a live web search — the routing decision is the point of the project.
-
-Deliberately **no RAG frameworks** — no LangChain, no LlamaIndex. The chunker, the embedding and indexing step, retrieval, the ReAct loop and tool dispatch are all written directly; libraries are used only for primitives. Every model call goes through one entry point, so swapping Llama 3.3 70B on Groq for a local Ollama server is a one-file change.
-
-**Status:** the PDF ingestion and text-cleaning layer is built. Chunking, the FAISS index, retrieval, the agent loop, the evaluation harness and the API are still to come.
+- 🚕 **NYC Yellow Taxi Data Mining Pipeline** — `Python` `pandas` `scikit-learn` — ETL over large-scale trip data (profiling, cleaning, feature engineering) feeding classification models at **~97% accuracy**
+- 🤖 **[CUD Course Scraper](https://github.com/Abdulla1x/CourseScraping-BU)** — `Python` `browser-use` `Gemini` `Ollama DeepSeek-R1` `Streamlit` — LLM-driven browser automation that logs into the CUD student portal and scrapes course offerings into a searchable, filterable Streamlit table
+- 🏙️ **[Chicago City Data Analysis](https://github.com/Abdulla1x/sql-assessments)** — `SQL` — multi-dataset analysis of community hardship, crime rates and school performance, with views, stored procedures and transaction management
+- 💊 **[AI Medication Reminder](https://github.com/Abdulla1x/AI-Medication-Remainder)** — `Python` `Streamlit` `Gemini` `APScheduler` `SWI-Prolog` — Gemini parses natural-language schedules, APScheduler fires the reminders, and Prolog rules check for drug interactions
 
 ---
 
