@@ -28,17 +28,6 @@ In practice that means scoring an AI model's estimates against what users actual
 
 ## 🚀 Featured Projects
 
-### 🌍 [OpenAQ Air-Quality Data Pipeline](https://github.com/Abdulla1x/openaq-pipeline) — [Live Dashboard](https://datastudio.google.com/reporting/7c88238c-c153-4c64-bf5b-c1974f859158/page/9Fj4F)
-`Python` `Airflow` `dbt` `BigQuery` `Terraform` `Docker` `Looker Studio`
-
-Batch data pipeline ingesting air-quality data from the OpenAQ v3 API, comparing the UAE and Pakistan on PM2.5 against WHO 2021 guidelines.
-- Backfilled **1.8M measurements** in resumable 60-day chunks, each count-reconciled against the API before it is checkpointed
-- An **Airflow** DAG fans out one dynamically-mapped task per sensor behind a rate-limit pool; a Dataset event then schedules a **dbt** transform DAG that astronomer-cosmos renders as one Airflow task per model
-- staging → daily aggregates → WHO-exceedance marts across **121 dbt nodes and 83 data tests**, with every GCP resource provisioned by **Terraform** and five required CI checks on `main`
-- The finding: Pakistan's PM2.5 exceeded the WHO 24-hour guideline on **100% of 455 shared days** (mean 75 µg/m³) against the UAE's **94%** (mean 37 µg/m³) — published alongside the coverage gap that qualifies it, ~180 reporting stations a day versus ~8
-
----
-
 ### 🥗 [Trackaholic](https://github.com/Abdulla1x/Trackaholic) — [Live App](https://trackaholic.app)
 `React 19` `TypeScript` `FastAPI` `PostgreSQL` `SQLAlchemy` `Gemini` `PWA`
 
@@ -52,6 +41,17 @@ A deployed **multi-user** calorie and macro tracker, formerly *Macros Calculator
 - Redesigned installable **PWA** — light and dark, nine palettes and a nutrition-label style — with **zero WCAG 2.2 A/AA violations** in an axe-core audit of all 37 routes at two widths; on Vercel + Render + Neon with Alembic migrations on every deploy
 
 *Engineering write-ups: [a three-day AI outage, traced to the server's region](https://github.com/Abdulla1x/Trackaholic/blob/main/docs/incident-2026-07-gemini-eea-region.md) · [picking a photo size with an A/B instead of a hunch](https://github.com/Abdulla1x/Trackaholic/blob/main/docs/photo-size-ab-2026-10.md) · [setting a calorie target from sources](https://github.com/Abdulla1x/Trackaholic/blob/main/docs/goal-setting-rules.md). Full feature list, architecture and screenshots in the [project README](https://github.com/Abdulla1x/Trackaholic#readme).*
+
+---
+
+### 🌍 [OpenAQ Air-Quality Data Pipeline](https://github.com/Abdulla1x/openaq-pipeline) — [Live Dashboard](https://datastudio.google.com/reporting/7c88238c-c153-4c64-bf5b-c1974f859158/page/9Fj4F)
+`Python` `Airflow` `dbt` `BigQuery` `Terraform` `Docker` `Looker Studio`
+
+Batch data pipeline ingesting air-quality data from the OpenAQ v3 API, comparing the UAE and Pakistan on PM2.5 against WHO 2021 guidelines.
+- Backfilled **1.8M measurements** in resumable 60-day chunks, each count-reconciled against the API before it is checkpointed
+- An **Airflow** DAG fans out one dynamically-mapped task per sensor behind a rate-limit pool; a Dataset event then schedules a **dbt** transform DAG that astronomer-cosmos renders as one Airflow task per model
+- staging → daily aggregates → WHO-exceedance marts across **121 dbt nodes and 83 data tests**, with every GCP resource provisioned by **Terraform** and five required CI checks on `main`
+- The finding: Pakistan's PM2.5 exceeded the WHO 24-hour guideline on **100% of 455 shared days** (mean 75 µg/m³) against the UAE's **94%** (mean 37 µg/m³) — published alongside the coverage gap that qualifies it, ~180 reporting stations a day versus ~8
 
 ---
 
