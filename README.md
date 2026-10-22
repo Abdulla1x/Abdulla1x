@@ -28,7 +28,7 @@ In practice that means scoring an AI model's estimates against what users actual
 
 ## 🚀 Featured Projects
 
-### 🥗 [Trackaholic](https://github.com/Abdulla1x/Trackaholic) — [Live App](https://trackaholic.app)
+### 🥗 [Trackaholic](https://github.com/Abdulla1x/Trackaholic) — [Live App](https://trackaholic.app) — [The Story](https://story.trackaholic.app/?ref=gh-profile)
 `React 19` `TypeScript` `FastAPI` `PostgreSQL` `SQLAlchemy` `Gemini` `PWA`
 
 A deployed **multi-user** calorie and macro tracker, formerly *Macros Calculator*. It started in 2024 as a single-user Streamlit prototype and was rebuilt as a React SPA over a FastAPI REST API. **200+ merged PRs · 1,600+ tests · 55 API paths · six-gate CI.**
